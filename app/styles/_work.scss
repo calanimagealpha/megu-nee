@@ -1,0 +1,43 @@
+.works_preview-container{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.work_preview-container{
+  margin: $unit_gutter-width;
+  position: relative;
+  overflow: hidden;
+
+  h1{
+    font-size: 1em;
+  }
+  &:hover{
+    .work_preview-creator-container{
+      bottom: 0;
+    }
+    .work_preview-image{
+      @include filter(blur(2px));
+    }
+  }
+}
+.work_preview-title{
+  height: 20px;
+  max-width: 300px;
+  overflow: hidden;
+}
+.work_preview-image{
+  height: 400px;
+}
+.work_preview-creator-container{
+  position: absolute;
+  bottom: -200px;
+
+  width: 100%;
+  height: 200px;
+
+  background: rgba(0,0,0,.9);
+
+  z-index: 2;
+
+  transition: all 300ms ease-in-out;
+}

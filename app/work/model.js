@@ -9,7 +9,8 @@ var Work = DS.Model.extend({
   isActive: DS.attr(),
   roles: DS.hasMany("role", {async: true}),
   workParts: DS.hasMany("workPart"),
-  tags: DS.hasMany("tag")
+  tags: DS.hasMany("tag"),
+  coverImage: DS.attr()
 });
 
 Work.reopenClass({
@@ -23,6 +24,7 @@ Work.reopenClass({
       description: "",
       isActive: true,
       roles: [1],
+      coverImage: "/assets/images/temp/P001.jpg"
     },
     {
       id: 2,
@@ -32,7 +34,8 @@ Work.reopenClass({
       releaseDate: "2015-01-12 07:43",
       description: "",
       isActive: true,
-      roles: [2]
+      roles: [2],
+      coverImage: "/assets/images/temp/01.jpg"
     }
   ]
 });

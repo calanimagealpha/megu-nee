@@ -1,6 +1,7 @@
-nyanpa hello
+<section class="works_preview-container">
 {{#each model as |work|}}
   {{#link-to "work" work}}
-    {{work.title}}
+    {{work-preview work=work}}
   {{/link-to}}
 {{/each}}
+</section>

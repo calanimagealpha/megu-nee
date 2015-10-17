@@ -47,9 +47,6 @@
   border-bottom: 1px dashed white;
 
   img{
-    &:hover{
-      @include filter(blur(2px) contrast(120%));
-    }
 
     transition: all 0.2s ease-out;
   }

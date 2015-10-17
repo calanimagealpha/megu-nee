@@ -1,0 +1,9 @@
+<h1 class="work_preview-title">{{work.title}}</h1>
+<div class="work_preview-creator-container">
+  <ul>
+    {{#each work.roles as |role|}}
+      <li>{{role.role}}: {{role.creator.name}}</li>
+    {{/each}}
+  </ul>
+</div>
+<img class="work_preview-image" src={{work.coverImage}}>

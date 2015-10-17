@@ -1,15 +1,22 @@
 $color_light-border: #ececec;
+$color_link: #f44ab4;
 
 $unit_nav-height: 44px;
 $unit_nav-width: 300px;
 $unit_content-width: 100%;
-
+$unit_gutter-width: 20px;
 
 @mixin filter($filter){
   -webkit-filter: $filter;
   filter: $filter;
 }
 
-a, a:hover{
-  text-decoration:  none,
+a, a:hover, a:visited{
+  text-decoration:  none;
+  color: $color_link;
+
+  transition: all 100ms ease-in;
+}
+a:hover{
+  color: darken($color_link, 20%);
 }
