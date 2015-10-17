@@ -1,0 +1,5 @@
+sup {{model.title}}
+
+{{#each model.roles as |role|}}
+  {{role.role}} - {{role.creator.name}}
+{{/each}}

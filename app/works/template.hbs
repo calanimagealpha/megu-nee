@@ -1,0 +1,6 @@
+nyanpa hello
+{{#each model as |work|}}
+  {{#link-to "work" work}}
+    {{work.title}}
+  {{/link-to}}
+{{/each}}

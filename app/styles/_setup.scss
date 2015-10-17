@@ -1,0 +1,15 @@
+$color_light-border: #ececec;
+
+$unit_nav-height: 44px;
+$unit_nav-width: 300px;
+$unit_content-width: 100%;
+
+
+@mixin filter($filter){
+  -webkit-filter: $filter;
+  filter: $filter;
+}
+
+a, a:hover{
+  text-decoration:  none,
+}
