@@ -40,8 +40,6 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    // important for github pages
-    ENV.baseURL = '/taroumaru/';
   }
 
   return ENV;
